@@ -1,0 +1,461 @@
+2024-11-26 00:48:06 [INFO] [restartedMain] c.e.I.IntegroApplication - Starting IntegroApplication using Java 22.0.1 with PID 11268 (C:\Users\usuario\Documents\CURSO Certified developer\Back  End JAVA\Integro\target\classes started by usuario in C:\Users\usuario\Documents\CURSO Certified developer\Back  End JAVA\Integro)
+2024-11-26 00:48:06 [DEBUG] [restartedMain] c.e.I.IntegroApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-26 00:48:06 [INFO] [restartedMain] c.e.I.IntegroApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 00:48:06 [INFO] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-26 00:48:07 [INFO] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-26 00:48:11 [INFO] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 00:48:12 [INFO] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 309 ms. Found 5 JPA repository interfaces.
+2024-11-26 00:48:14 [INFO] [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-11-26 00:48:14 [INFO] [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2024-11-26 00:48:14 [INFO] [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-26 00:48:14 [INFO] [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2024-11-26 00:48:14 [INFO] [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7985 ms
+2024-11-26 00:48:15 [INFO] [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2024-11-26 00:48:17 [INFO] [restartedMain] c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b84aa84
+2024-11-26 00:48:17 [INFO] [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-26 00:48:17 [INFO] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/DentalOffice'
+2024-11-26 00:48:20 [INFO] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 00:48:23 [INFO] [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 00:48:25 [DEBUG] [restartedMain] c.e.I.J.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2024-11-26 00:48:27 [INFO] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailService
+2024-11-26 00:48:28 [WARN] [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 00:48:30 [WARN] [restartedMain] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-11-26 00:48:32 [INFO] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-26 00:48:32 [INFO] [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2024-11-26 00:48:32 [INFO] [restartedMain] c.e.I.IntegroApplication - Started IntegroApplication in 28.254 seconds (process running for 38.662)
+2024-11-26 00:48:32 [INFO] [restartedMain] c.e.I.IntegroApplication - ClinicaOdontologica is now running...
+2024-11-26 00:49:34 [INFO] [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26 00:49:34 [INFO] [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-26 00:49:34 [INFO] [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 3 ms
+2024-11-26 00:49:36 [DEBUG] [http-nio-8081-exec-1] org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-11-26 00:49:36 [DEBUG] [http-nio-8081-exec-1] org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        roles_user r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2024-11-26 00:49:36 [DEBUG] [http-nio-8081-exec-1] org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-11-26 00:51:17 [DEBUG] [http-nio-8081-exec-5] org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-11-26 00:51:17 [DEBUG] [http-nio-8081-exec-5] org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        roles_user r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2024-11-26 00:51:17 [WARN] [http-nio-8081-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.Integro.DTO.Salida.Patient.PatientExit> com.example.Integro.Controller.Patient.PatientController.registerPatient(com.example.Integro.DTO.Entrada.Patient.PatientEntrance) with 6 errors: [Field error in object 'patientEntrance' on field 'lastName': rejected value [null]; codes [NotNull.patientEntrance.lastName,NotNull.lastName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientEntrance.lastName,lastName]; arguments []; default message [lastName]]; default message [El apellido del paciente no puede ser nulo]] [Field error in object 'patientEntrance' on field 'lastName': rejected value [null]; codes [NotBlank.patientEntrance.lastName,NotBlank.lastName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientEntrance.lastName,lastName]; arguments []; default message [lastName]]; default message [Debe especificarse el apellido del paciente]] [Field error in object 'patientEntrance' on field 'entryDate': rejected value [null]; codes [NotNull.patientEntrance.entryDate,NotNull.entryDate,NotNull.java.time.LocalDate,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientEntrance.entryDate,entryDate]; arguments []; default message [entryDate]]; default message [Debe especificarse la fecha de ingreso del paciente]] [Field error in object 'patientEntrance' on field 'name': rejected value [null]; codes [NotBlank.patientEntrance.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientEntrance.name,name]; arguments []; default message [name]]; default message [Debe especificarse el nombre del paciente]] [Field error in object 'patientEntrance' on field 'addressEntrance': rejected value [null]; codes [NotNull.patientEntrance.addressEntrance,NotNull.addressEntrance,NotNull.com.example.Integro.DTO.Entrada.Patient.AddressEntrance,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientEntrance.addressEntrance,addressEntrance]; arguments []; default message [addressEntrance]]; default message [El domicilio del paciente no puede ser nulo]] [Field error in object 'patientEntrance' on field 'name': rejected value [null]; codes [NotNull.patientEntrance.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientEntrance.name,name]; arguments []; default message [name]]; default message [El nombre del paciente no puede ser nulo]] ]
+2024-11-26 00:51:50 [DEBUG] [http-nio-8081-exec-7] org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-11-26 00:51:50 [DEBUG] [http-nio-8081-exec-7] org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        roles_user r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2024-11-26 00:51:50 [WARN] [http-nio-8081-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.Integro.DTO.Salida.Patient.PatientExit> com.example.Integro.Controller.Patient.PatientController.registerPatient(com.example.Integro.DTO.Entrada.Patient.PatientEntrance) with 6 errors: [Field error in object 'patientEntrance' on field 'name': rejected value [null]; codes [NotBlank.patientEntrance.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientEntrance.name,name]; arguments []; default message [name]]; default message [Debe especificarse el nombre del paciente]] [Field error in object 'patientEntrance' on field 'addressEntrance': rejected value [null]; codes [NotNull.patientEntrance.addressEntrance,NotNull.addressEntrance,NotNull.com.example.Integro.DTO.Entrada.Patient.AddressEntrance,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientEntrance.addressEntrance,addressEntrance]; arguments []; default message [addressEntrance]]; default message [El domicilio del paciente no puede ser nulo]] [Field error in object 'patientEntrance' on field 'name': rejected value [null]; codes [NotNull.patientEntrance.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientEntrance.name,name]; arguments []; default message [name]]; default message [El nombre del paciente no puede ser nulo]] [Field error in object 'patientEntrance' on field 'lastName': rejected value [null]; codes [NotBlank.patientEntrance.lastName,NotBlank.lastName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientEntrance.lastName,lastName]; arguments []; default message [lastName]]; default message [Debe especificarse el apellido del paciente]] [Field error in object 'patientEntrance' on field 'lastName': rejected value [null]; codes [NotNull.patientEntrance.lastName,NotNull.lastName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientEntrance.lastName,lastName]; arguments []; default message [lastName]]; default message [El apellido del paciente no puede ser nulo]] [Field error in object 'patientEntrance' on field 'entryDate': rejected value [null]; codes [NotNull.patientEntrance.entryDate,NotNull.entryDate,NotNull.java.time.LocalDate,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientEntrance.entryDate,entryDate]; arguments []; default message [entryDate]]; default message [Debe especificarse la fecha de ingreso del paciente]] ]
+2024-11-26 00:54:10 [DEBUG] [http-nio-8081-exec-8] org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-11-26 00:54:10 [DEBUG] [http-nio-8081-exec-8] org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        roles_user r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2024-11-26 00:54:10 [DEBUG] [http-nio-8081-exec-8] org.hibernate.SQL - 
+    insert 
+    into
+        home
+        (locality, number, province, street) 
+    values
+        (?, ?, ?, ?)
+2024-11-26 00:54:10 [DEBUG] [http-nio-8081-exec-8] org.hibernate.SQL - 
+    insert 
+    into
+        patient
+        (dni, entry_date, home_id, last_name, name) 
+    values
+        (?, ?, ?, ?, ?)
+2024-11-26 00:54:10 [INFO] [http-nio-8081-exec-8] c.e.I.S.i.PatientService - Patient guardado: PatientExit{id=1, name='karol', lastName='perez', dni=10903981, entryDate=2024-11-27, addressExit=com.example.Integro.DTO.Salida.Patient.AddressExit@619b5f07}
+2024-11-26 00:59:11 [INFO] [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 00:59:11 [INFO] [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-26 00:59:11 [INFO] [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-26 20:52:23 [INFO] [restartedMain] c.e.I.IntegroApplication - Starting IntegroApplication using Java 22.0.1 with PID 7112 (C:\Users\usuario\Documents\CURSO Certified developer\Back  End JAVA\Integro\target\classes started by usuario in C:\Users\usuario\Documents\CURSO Certified developer\Back  End JAVA\Integro)
+2024-11-26 20:52:23 [DEBUG] [restartedMain] c.e.I.IntegroApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-26 20:52:23 [INFO] [restartedMain] c.e.I.IntegroApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 20:52:23 [INFO] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-26 20:52:23 [INFO] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-26 20:52:31 [INFO] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 20:52:31 [INFO] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 423 ms. Found 5 JPA repository interfaces.
+2024-11-26 20:52:35 [INFO] [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-11-26 20:52:35 [INFO] [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2024-11-26 20:52:35 [INFO] [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-26 20:52:35 [INFO] [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2024-11-26 20:52:35 [INFO] [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11476 ms
+2024-11-26 20:52:35 [INFO] [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2024-11-26 20:52:37 [INFO] [restartedMain] c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36ec1a52
+2024-11-26 20:52:37 [INFO] [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-26 20:52:37 [INFO] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/DentalOffice'
+2024-11-26 20:52:41 [INFO] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 20:52:45 [INFO] [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 20:52:46 [DEBUG] [restartedMain] c.e.I.J.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2024-11-26 20:52:47 [INFO] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailService
+2024-11-26 20:52:49 [WARN] [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 20:52:56 [WARN] [restartedMain] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-11-26 20:53:02 [INFO] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-26 20:53:03 [INFO] [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2024-11-26 20:53:03 [INFO] [restartedMain] c.e.I.IntegroApplication - Started IntegroApplication in 43.226 seconds (process running for 48.279)
+2024-11-26 20:53:03 [INFO] [restartedMain] c.e.I.IntegroApplication - ClinicaOdontologica is now running...
+2024-11-26 21:42:11 [INFO] [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26 21:42:11 [INFO] [http-nio-8081-exec-2] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-26 21:42:11 [INFO] [http-nio-8081-exec-2] o.s.w.s.DispatcherServlet - Completed initialization in 12 ms
+2024-11-26 21:42:12 [DEBUG] [http-nio-8081-exec-2] org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-11-26 21:42:12 [DEBUG] [http-nio-8081-exec-2] org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        roles_user r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2024-11-26 21:42:12 [DEBUG] [http-nio-8081-exec-2] org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-11-26 21:43:17 [DEBUG] [http-nio-8081-exec-4] org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-11-26 21:43:17 [DEBUG] [http-nio-8081-exec-4] org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        roles_user r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2024-11-26 21:43:17 [DEBUG] [http-nio-8081-exec-4] org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.dni,
+        p1_0.entry_date,
+        h1_0.id,
+        h1_0.locality,
+        h1_0.number,
+        h1_0.province,
+        h1_0.street,
+        p1_0.last_name,
+        p1_0.name 
+    from
+        patient p1_0 
+    left join
+        home h1_0 
+            on h1_0.id=p1_0.home_id 
+    where
+        p1_0.id=?
+2024-11-26 21:43:17 [DEBUG] [http-nio-8081-exec-4] org.hibernate.SQL - 
+    insert 
+    into
+        home
+        (locality, number, province, street) 
+    values
+        (?, ?, ?, ?)
+2024-11-26 21:43:18 [DEBUG] [http-nio-8081-exec-4] org.hibernate.SQL - 
+    update
+        patient 
+    set
+        dni=?,
+        entry_date=?,
+        home_id=?,
+        last_name=?,
+        name=? 
+    where
+        id=?
+2024-11-26 21:43:18 [WARN] [http-nio-8081-exec-4] c.e.I.S.i.PatientService - Patient actualizado:PatientExit{id=1, name='Julieth', lastName='perez', dni=10903981, entryDate=2024-11-27, addressExit=com.example.Integro.DTO.Salida.Patient.AddressExit@49d5026e}
+2024-11-26 21:43:53 [DEBUG] [http-nio-8081-exec-5] org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-11-26 21:43:53 [DEBUG] [http-nio-8081-exec-5] org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        roles_user r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2024-11-26 21:43:53 [DEBUG] [http-nio-8081-exec-5] org.hibernate.SQL - 
+    insert 
+    into
+        dentist
+        (last_name, name, tuition) 
+    values
+        (?, ?, ?)
+2024-11-26 21:43:55 [INFO] [http-nio-8081-exec-5] c.e.I.S.i.DentistService - Dentist guardado: com.example.Integro.DTO.Salida.Dentist.DentistExit@7fa88e0e
+2024-11-26 21:44:55 [DEBUG] [http-nio-8081-exec-7] org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-11-26 21:44:55 [DEBUG] [http-nio-8081-exec-7] org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        roles_user r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2024-11-26 21:44:55 [DEBUG] [http-nio-8081-exec-7] org.hibernate.SQL - 
+    select
+        d1_0.id,
+        d1_0.last_name,
+        d1_0.name,
+        d1_0.tuition 
+    from
+        dentist d1_0 
+    where
+        d1_0.id=?
+2024-11-26 21:44:55 [INFO] [http-nio-8081-exec-7] c.e.I.S.i.DentistService - Dentist encontrado: com.example.Integro.DTO.Salida.Dentist.DentistExit@5b56f499
+2024-11-26 21:45:16 [DEBUG] [http-nio-8081-exec-8] org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-11-26 21:45:16 [DEBUG] [http-nio-8081-exec-8] org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        roles_user r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2024-11-26 21:45:16 [DEBUG] [http-nio-8081-exec-8] org.hibernate.SQL - 
+    select
+        d1_0.id,
+        d1_0.last_name,
+        d1_0.name,
+        d1_0.tuition 
+    from
+        dentist d1_0 
+    where
+        d1_0.id=?
+2024-11-26 21:45:16 [INFO] [http-nio-8081-exec-8] c.e.I.S.i.DentistService - Dentist encontrado: com.example.Integro.DTO.Salida.Dentist.DentistExit@94bee09
+2024-11-26 22:02:53 [DEBUG] [http-nio-8081-exec-1] org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-11-26 22:02:53 [DEBUG] [http-nio-8081-exec-1] org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        roles_user r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2024-11-26 22:02:53 [WARN] [http-nio-8081-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.Integro.DTO.Salida.Shift.ShiftOut> com.example.Integro.Controller.Shift.ShiftController.registerShift(com.example.Integro.DTO.Entrada.Shift.ShiftEntrance) throws com.example.Integro.Exceptions.BadRequestException: [Field error in object 'shiftEntrance' on field 'dateAndTime': rejected value [2024-10-21T11:20]; codes [FutureOrPresent.shiftEntrance.dateAndTime,FutureOrPresent.dateAndTime,FutureOrPresent.java.time.LocalDateTime,FutureOrPresent]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [shiftEntrance.dateAndTime,dateAndTime]; arguments []; default message [dateAndTime]]; default message [La fecha no puede ser anterior al día de hoy]] ]
+2024-11-26 22:03:34 [DEBUG] [http-nio-8081-exec-3] org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-11-26 22:03:34 [DEBUG] [http-nio-8081-exec-3] org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        roles_user r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2024-11-26 22:03:34 [DEBUG] [http-nio-8081-exec-3] org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.dni,
+        p1_0.entry_date,
+        h1_0.id,
+        h1_0.locality,
+        h1_0.number,
+        h1_0.province,
+        h1_0.street,
+        p1_0.last_name,
+        p1_0.name 
+    from
+        patient p1_0 
+    left join
+        home h1_0 
+            on h1_0.id=p1_0.home_id 
+    where
+        p1_0.id=?
+2024-11-26 22:03:34 [INFO] [http-nio-8081-exec-3] c.e.I.S.i.PatientService - Patient encontrado:PatientExit{id=1, name='Julieth', lastName='perez', dni=10903981, entryDate=2024-11-27, addressExit=com.example.Integro.DTO.Salida.Patient.AddressExit@21cde263}
+2024-11-26 22:03:34 [DEBUG] [http-nio-8081-exec-3] org.hibernate.SQL - 
+    select
+        d1_0.id,
+        d1_0.last_name,
+        d1_0.name,
+        d1_0.tuition 
+    from
+        dentist d1_0 
+    where
+        d1_0.id=?
+2024-11-26 22:03:34 [INFO] [http-nio-8081-exec-3] c.e.I.S.i.DentistService - Dentist encontrado: com.example.Integro.DTO.Salida.Dentist.DentistExit@1bee611a
+2024-11-26 22:03:34 [DEBUG] [http-nio-8081-exec-3] org.hibernate.SQL - 
+    insert 
+    into
+        shift
+        (date_and_time, dentist_id, patient_id) 
+    values
+        (?, ?, ?)
+2024-11-26 22:03:34 [INFO] [http-nio-8081-exec-3] c.e.I.S.i.PatientService - Patient encontrado:PatientExit{id=1, name='Julieth', lastName='perez', dni=10903981, entryDate=2024-11-27, addressExit=com.example.Integro.DTO.Salida.Patient.AddressExit@447651e9}
+2024-11-26 22:03:34 [INFO] [http-nio-8081-exec-3] c.e.I.S.i.DentistService - Dentist encontrado: com.example.Integro.DTO.Salida.Dentist.DentistExit@759cc418
+2024-11-26 22:17:38 [DEBUG] [http-nio-8081-exec-5] org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-11-26 22:17:38 [DEBUG] [http-nio-8081-exec-5] org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        roles_user r1_0 
+    join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2024-11-26 22:17:38 [WARN] [http-nio-8081-exec-5] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.example.Integro.DTO.Entrada.Loggin.RoleEntrance` (although at least one Creator exists): no int/Int-argument constructor/factory method to deserialize from Number value (1)]
+2024-11-26 22:37:47 [INFO] [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 22:37:47 [INFO] [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-26 22:37:47 [INFO] [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
